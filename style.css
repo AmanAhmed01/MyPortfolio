@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 34px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background: url(/background.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar h2 {
+    color: white;
+}
+
+span {
+    color: #f9004d;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 34px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#navbar ul li a:hover {
+    color: #f9004d;
+}
+
+.btn {
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px 24px;
+    text-decoration: none;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+/* Making Home */
+#home {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+#home h1 {
+    color: white;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+
+}
+
+#home h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#home h4 {
+    color: #fcfc;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.email form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.email form input:first-child {
+    display: inline-block;
+    width: 61%;
+    padding: 14px 130px 14px 15px; /*top, right, down ,left */
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+
+.email form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#f9004d;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
+}
+
+/* Making About-Us */
+#about{
+	width: 100%;
+	padding-top: 676px;
+    height: 100%;
+}
+#about::before{
+    content: "";
+    position: absolute;
+    background: #191919;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#about img{
+    padding: 70px;
+	height: auto;
+	width: 430px;
+}
+.about-us{
+	width: 550px ;
+}
+.about-title{   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vw;
+    max-width: 95%;
+    margin: auto;
+}
+.about-title h2{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.about-title h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+.about-title p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 34px;
+}
+.btn2{
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 13px 30px;
+    text-decoration: none;
+}
+.btn2:hover{
+    background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+/* Making Services Section */
+#services{
+    color: white;
+    margin: 34px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#services-container::before{
+    content: "";
+    position: absolute;
+    background: black;  
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.ser{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    margin: 40px;
+    padding-top: 54px;
+}
+#services .box{ 
+    width: 280px;
+    background-color: #191919;
+    padding: 34px;
+    margin: 0px 34px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+#services .box h3{
+    letter-spacing: 1px
+}
+#services .box p{
+    color: #fcfc;
+    text-align: center;
+    padding: 14px 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* Making Hire section */
+#hire-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#hire-container::before{
+    content: "";
+    position: absolute;
+    background: #191919;  
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+#hire{
+    padding: 84px;
+}
+#hire h3{
+    color: white;
+    padding: 24px;
+    font-size: 30px;
+}
+
+/* Making info section */
+#info-container{
+    color: white;
+    text-align: center;
+    height: 50%;
+}
+#info-container::before{
+    content: "";
+    position: absolute;
+    background: black;  
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+#info{
+    padding: 60px;
+}
+#info h2{
+    font-size: 30px
+}
+#info p{
+    padding: 24px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
